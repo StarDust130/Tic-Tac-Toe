@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Dancing+Script&family=Fasthand&display=swap');
+ 
+*{
+    margin: 0;
+    padding: 0;
+}
+.bg{
+    background-image: url(https://e1.pxfuel.com/desktop-wallpaper/41/636/desktop-wallpaper-games-backgrounds-group-2d-game.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 94vh;
+    width: 100%;
+    
+}
+nav{
+    color: black;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+.gameContainer{
+    
+    display: flex;
+    justify-content: center;
+    margin-top:  50px;    
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family:' monospace ';
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+   
+}
+.container:hover{
+    transform: scale(1.1);
+    
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: white;
+    color: white;
+    cursor: pointer;
+}
+.box:active{
+    transform: scale(0.9);
+}
+.info{
+    font-size: 25px;
+}
+.gameInfo h1{
+    font-size: 2.5rem;
+}
+.gameInfo{
+    padding: 10 50px;
+    font-family: 'Sirin Stencil', cursive;
+    margin-left: 50px;
+    
+}
+.imgbox img{
+    width: 0;
+    transition: width 0.5s ease-in-out;
+
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0; 
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    background-color: rgb(19, 184, 230);
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Sirin Stencil', cursive;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-weight: 200;
+}
+#reset:hover{
+    background-color: rgb(238, 232, 243);
+    color: black;
+}
+#reset:active{
+    transform: scale(0.9);
+}
+.line{
+    background-color: rgb(19, 184, 230);
+    width: 0;
+    height: 5px;
+    border-radius: 3px;
+    position: absolute;
+    transition: width 0.5s ease-in-out;
+}
+@media screen and (max-width: 900px){
+    .Container{
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+    .box{
+        font-size: 15vw;
+    }
+    .gameInfo{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .imgbox img{
+        width: 100%;
+    }
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+
+}
+footer {
+    text-align: center;
+    padding: 3px;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+
